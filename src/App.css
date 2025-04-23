@@ -24,9 +24,15 @@
   }
   
   main {
-    padding-top: 50px;
+    padding-top: 2.5vw;
   }
 
+  .container {
+    max-width: 1400px;
+    margin: 2.5vw auto;
+    padding: 0 5vw;
+  }
+  
   body {
     padding-top: 10px;
     font-family: 'Lato', sans-serif;
