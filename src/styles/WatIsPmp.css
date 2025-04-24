@@ -1,0 +1,49 @@
+
+.pmp-layout {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vw 0 0;
+  background-color: #ece0d7;
+  box-sizing: border-box;
+  height: 80vh;
+}
+  
+.pmp-canvas {
+  flex: 1 1 65%;
+  min-width: 300px;
+}
+  
+.canvas-placeholder {
+  background-color: #d6d5cf;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.pmp-info-box h2 {
+  padding-bottom: 2rem;
+}
+  
+.pmp-info-box {
+  flex: 1 1 35%;
+  min-width: 280px;
+  max-width: 500px;
+  height: 80%;
+  align-self: center;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pmp-info-box .button {
+  margin-top: auto;
+  align-self: flex-end;
+  width: fit-content;
+}
+
+button {
+  all: unset;
+}
