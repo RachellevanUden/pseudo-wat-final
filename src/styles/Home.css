@@ -1,0 +1,49 @@
+.video-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+  
+.video-placeholder {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  background-color: #D9D5D2;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+  
+.play-icon {
+  font-size: 6rem;
+  color: #333;
+}
+  
+.info-sectie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+  margin-bottom: 4rem;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+  
+.info-sectie-content {
+  text-align: left;
+}
+
+.ontdek-sectie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+  margin-bottom: 4rem;
+}
