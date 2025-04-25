@@ -44,3 +44,7 @@
 button {
   all: unset;
 }
+
+#PMP, #Instructies {
+  margin-bottom: 1rem;
+}

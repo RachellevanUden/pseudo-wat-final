@@ -9,13 +9,13 @@ function Home() {
         <> 
         <Header />
             <main className='container'>
-                <h2>Waarom ik dit platform maakte</h2>
+                <h2 id='Home'>Waarom ik dit platform maakte</h2>
                     <section className='video-section'>
-                        <div className='video-placeholder'>
+                        <div className='video-placeholder home-video-placeholder"'>
                             <span className="play-icon">▶</span>
                         </div>
                     </section>
-                <h2>Wat kun je hier vinden?</h2>
+                    <h2 id='Home'>Wat kun je hier vinden?</h2>
                 <div className= "info-sectie">
                     <TextBlock
                         title="Duidelijke informatie"
@@ -43,7 +43,7 @@ function Home() {
                     </TextBlock>
                 </div>
 
-                <h2>Ontdek het platform</h2>
+                <h2 id='Home'>Ontdek het platform</h2>
                 <div className= "ontdek-sectie">
                     <TextBlock
                         title="Wat is Pseudomyxoma Peritonei (PMP)?"

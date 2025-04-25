@@ -6,14 +6,17 @@
 .video-placeholder {
   width: 100%;
   max-width: 800px;
-  height: 450px;
   background-color: #D9D5D2;
-  margin: 2rem auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.home-video-placeholder {
+  height: 450px;
 }
   
 .play-icon {
@@ -46,4 +49,8 @@
   gap: 1rem;
   margin: 1rem 0;
   margin-bottom: 4rem;
+}
+
+#Home {
+  margin-bottom: 1rem;
 }

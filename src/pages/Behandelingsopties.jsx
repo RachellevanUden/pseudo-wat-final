@@ -6,8 +6,8 @@ import Accordion from '../components/Accordion';
 function Behandelingsopties() {
   return (
     <main className="container">
-        <h2 className='Behandelingsopties'>Behandelingsopties voor Pseudomyxoma Peritonei (PMP)</h2>
-        <h3>Pseudomyxoma Peritonei kent verschillende behandelmethoden. <br/>Hieronder vind je de belangrijkste opties.</h3>
+        <h2 id='Behandelingsopties'>Behandelingsopties voor Pseudomyxoma Peritonei (PMP)</h2>
+        <h3 id='Opties'>Pseudomyxoma Peritonei kent verschillende behandelmethoden. <br/>Hieronder vind je de belangrijkste opties.</h3>
         
         <section className="video-section">
         <div className="video-placeholder">

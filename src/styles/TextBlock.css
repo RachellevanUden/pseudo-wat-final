@@ -17,6 +17,9 @@
   font-size: 1.125rem;
 }
 
+.text-block-content h3 {
+  margin-bottom: 1rem;
+}
 
 .text-block-icon {
   font-size: 5rem;
@@ -27,4 +30,19 @@
 .text-block-cta {
   margin-top: 2rem;
   text-align: center;
+}
+
+.text-block.side-by-side {
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-block-icon.side {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.text-block.side-by-side .text-block-content {
+  flex: 1;
 }
