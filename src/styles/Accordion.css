@@ -1,0 +1,35 @@
+.accordion {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+  
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.accordion-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.accordion-toggle {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+  
+.accordion h2 {
+  flex-grow: 1;
+}
+  
+.accordion-content {
+  margin-top: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #F89B38;
+}
