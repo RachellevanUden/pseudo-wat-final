@@ -79,7 +79,7 @@ function OverMij() {
                 <StoryCarousel stories={stories} />
             </div>
 
-            <h2 className='citaat'>“Ik was bang, boos en verward. Daarom wilde ik iets maken dat rust en duidelijkheid biedt.”</h2>
+            <h2 className='citaat'>“Ik was bang, boos en verward. <br/>Daarom wilde ik iets maken dat rust en duidelijkheid biedt.”</h2>
 
             <div className="missie-sectie">
                 <TextBlock className= "missie"

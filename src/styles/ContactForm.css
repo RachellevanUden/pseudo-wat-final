@@ -38,3 +38,11 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .thank-you-message {
+    font-size: 1.25rem;
+    color: #f89b38;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
