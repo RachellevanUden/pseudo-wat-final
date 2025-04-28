@@ -16,7 +16,8 @@
 }
 
 .home-video-placeholder {
-  height: 450px;
+  min-height: 300px;
+  height: clamp(300px, 50vh, 450px);
 }
   
 .play-icon {
@@ -55,3 +56,9 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  .info-sectie, .ontdek-sectie {
+    flex-direction: column;
+    align-items: center;
+  }
+}

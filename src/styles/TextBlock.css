@@ -54,3 +54,35 @@
 .text-block.side-by-side .text-block-content {
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .text-block {
+    min-width: 395px;
+  }
+
+  .text-block.side-by-side {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .text-block {
+    min-width: 325px;
+  }
+
+  .text-block.side-by-side {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .text-block.side-by-side .text-block-content {
+    margin: 0;
+    align-items: center;
+  }
+
+  .text-block-icon.side {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+}
