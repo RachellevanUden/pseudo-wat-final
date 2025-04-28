@@ -32,6 +32,7 @@ main {
   margin: 2.5vw auto;
   padding: 0 5vw;
 }
+
   
 body {
   padding-top: 10px;
@@ -91,4 +92,38 @@ button:hover,
 
 ul {
   padding-left: 1.25rem;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+  }
+
+  p, li, button, .button {
+    font-size: 1rem;
+  }
+
+  button, .button {
+    padding: 0.5rem 1rem;
+  }
+
+
 }
