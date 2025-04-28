@@ -37,7 +37,7 @@
 
 .citaat {
   font-style: italic;
-  max-width: 800px;
+
   margin: 4rem auto;
   text-align: center;
   line-height: 1.6;
@@ -94,3 +94,15 @@
 #OverMij {
   margin-bottom: 1rem;
 }
+
+.text-block.missie .text-block-icon.side {
+  flex: 0 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.missie-sectie .text-block-icon.side {
+  font-size: 10rem;
+}
+
