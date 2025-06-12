@@ -27,10 +27,11 @@ const nameMap = {
 	Eierstokken_2: "Eierstokken",
 };
 
-useGLTF.preload("/models/pmp-model.glb");
+const modelPath = `${import.meta.env.BASE_URL}models/pmp-model.glb`;
+useGLTF.preload(modelPath);
 
 export default function ThreeModel({ onSelect }) {
-	const { nodes, materials } = useGLTF("/models/pmp-model.glb");
+	const { nodes, materials } = useGLTF(modelPath);
 
 	const handleClick = (name) => {
 		if (onSelect) onSelect(name);
