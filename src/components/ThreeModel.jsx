@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { OrbitControls, useGLTF, Edges } from "@react-three/drei";
 
 const interactieveOnderdelen = [
 	"Lever",
@@ -30,7 +30,7 @@ const nameMap = {
 const modelPath = `${import.meta.env.BASE_URL}models/pmp-model.glb`;
 useGLTF.preload(modelPath);
 
-export default function ThreeModel({ onSelect }) {
+export default function ThreeModel({ onSelect, selectedOrgan }) {
 	const { nodes, materials } = useGLTF(modelPath);
 
 	const handleClick = (name) => {
@@ -44,12 +44,13 @@ export default function ThreeModel({ onSelect }) {
 				<directionalLight position={[2, 2, 2]} />
 
 				<Suspense fallback={null}>
-					<group scale={0.05} rotation={[3, 0, 0]} position={[0, 0.55, 0]}>
+					<group scale={0.05} rotation={[3, 0, 0]} position={[0, 0.5, 0]}>
 						{Object.entries(nodes).map(([name, node]) => {
 							if (!node.geometry) return null;
 
 							const isClickable = interactieveOnderdelen.includes(name);
 							const displayName = nameMap[name] || name;
+							const isSelected = displayName === selectedOrgan;
 
 							return (
 								<mesh
@@ -62,7 +63,11 @@ export default function ThreeModel({ onSelect }) {
 										e.stopPropagation();
 										if (isClickable) handleClick(displayName);
 									}}
-								/>
+								>
+									{isSelected && (
+										<Edges scale={1} color="#2196f3" threshold={15} />
+									)}
+								</mesh>
 							);
 						})}
 					</group>

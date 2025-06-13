@@ -1,6 +1,6 @@
 import TextBlock from "../components/TextBlock";
 import "../styles/OverMij.css";
-import { GoGoal } from "react-icons/go";
+import missionIcon from "../assets/icons/mission-icon.svg";
 import ContactForm from "../components/ContactForm";
 import StoryCarousel from "../components/StoryCarousel";
 
@@ -107,7 +107,9 @@ function OverMij() {
 				<TextBlock
 					className="missie"
 					title="Mijn missie"
-					icon={<GoGoal />}
+					icon={
+						<img src={missionIcon} alt="Missie icoon" className="custom-icon" />
+					}
 					sideBySide={true}
 				>
 					<p>
