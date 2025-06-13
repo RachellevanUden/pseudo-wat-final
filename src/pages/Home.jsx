@@ -2,7 +2,10 @@ import Header from "../components/Header";
 import TextBlock from "../components/TextBlock";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
-import { FaBookOpen, FaHandsHelping, FaHeartbeat } from "react-icons/fa";
+import infoIcon from "../assets/icons/info-icon.svg";
+import begeleidingIcon from "../assets/icons/begeleiding-icon.svg";
+import speciaalIcon from "../assets/icons/speciaal-icon.svg";
+import CustomIcon from "../components/CustomIcon";
 
 function Home() {
 	return (
@@ -23,7 +26,11 @@ function Home() {
 				</section>
 				<h2 id="Home">Wat kun je hier vinden?</h2>
 				<div className="info-sectie">
-					<TextBlock title="Duidelijke informatie" icon={<FaBookOpen />}>
+					<TextBlock
+						title="Duidelijke informatie"
+						className="custom-icon-block"
+						icon={<CustomIcon src={infoIcon} alt="Informatie icoon" />}
+					>
 						<ul>
 							<li>Begrijp wat PMP is, zonder medische overload.</li>
 							<li>Korte, betrouwbare uitleg in begrijpelijke taal.</li>
@@ -31,14 +38,19 @@ function Home() {
 					</TextBlock>
 					<TextBlock
 						title="Minder angst, meer overzicht"
-						icon={<FaHandsHelping />}
+						className="custom-icon-block"
+						icon={<CustomIcon src={begeleidingIcon} alt="Begeleiding icoon" />}
 					>
 						<ul>
 							<li>We begeleiden je stap voor stap.</li>
 							<li>Geen schokkende beelden, maar geruststelling.</li>
 						</ul>
 					</TextBlock>
-					<TextBlock title="Speciaal voor patienten" icon={<FaHeartbeat />}>
+					<TextBlock
+						title="Speciaal voor patienten"
+						className="custom-icon-block"
+						icon={<CustomIcon src={speciaalIcon} alt="Speciaal icoon" />}
+					>
 						<ul>
 							<li>Wat je moet weten na je diagnose.</li>
 							<li>Geschikt voor elk niveau van voorkennis.</li>
