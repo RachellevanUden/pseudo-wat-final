@@ -17,7 +17,7 @@ function Behandelingsopties() {
 			<section className="video-section">
 				<div className="responsive-video">
 					<iframe
-						src="https://www.youtube.com/embed/LqXk4g5ntow"
+						src="https://www.youtube.com/embed/lR0fMkMM3ik"
 						title="CRS-HIPEC behandeling voor PMP"
 						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

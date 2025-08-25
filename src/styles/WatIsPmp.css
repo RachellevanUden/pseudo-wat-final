@@ -13,11 +13,12 @@
 }
 
 .canvas-placeholder {
-	background: linear-gradient(to bottom, #dceff6, #c5e0ec);
+	background: linear-gradient(to bottom, #a3bbc5, #66a0b1);
 	height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 0 10px 10px 0;
 }
 
 .pmp-info-box {
